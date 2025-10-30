@@ -10,9 +10,9 @@ app.get("/", (req, res) => {
 
   res.json({
     status: "ok",
-    botId: "SEU_BOT_ID_AQUI"
+    botId: "wc96327495"
   });
-  
+
 });
 
 // Rota POST para receber mensagens da Suri

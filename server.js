@@ -4,6 +4,10 @@ import fetch from "node-fetch";
 const app = express();
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("🚀 Webhook está online!");
+});
+
 app.post("/suri-webhook", async (req, res) => {
   try {
     const userMessage = req.body.text || "Olá"; // mensagem recebida da Suri

@@ -7,6 +7,12 @@ app.use(express.json());
 // Rota GET para testar se o servidor está online
 app.get("/", (req, res) => {
   res.send("🚀 Webhook da Suri está online!");
+
+  res.json({
+    status: "ok",
+    botId: "SEU_BOT_ID_AQUI"
+  });
+  
 });
 
 // Rota POST para receber mensagens da Suri
